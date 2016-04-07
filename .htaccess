@@ -7,8 +7,14 @@ ErrorDocument 403 /403.php
 ErrorDocument 404 /404.php
 
 RewriteEngine On
+RewriteBase /
 RewriteCond %{HTTP_HOST} ^www.stud9.asdat.info$
 RewriteRule ^(.*)$ http://stud9.asdat.info/$1 [R=301,L]
+
+RewriteRule ^([A-Za-z0-9]+)/?$ pages/news.php
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ http://www.stud9.asdat.info/ [R=301,L]
 
 
 
