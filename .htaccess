@@ -8,14 +8,13 @@ ErrorDocument 404 /404.php
 
 RewriteEngine On
 RewriteBase /
-RewriteCond %{HTTP_HOST} ^www.stud9.asdat.info$
-RewriteRule ^(.*)$ http://stud9.asdat.info/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.$
+RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1 [R=301,L]
 
-RewriteRule ^([A-Za-z0-9]+)/?$ pages/news.php
+#RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+#RewriteRule ^index\.php$ http://www.stud9.asdat.info/ [R=301,L]
 
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
-RewriteRule ^index\.php$ http://www.stud9.asdat.info/ [R=301,L]
-
+RewriteRule ^(albums|enter|kinonews|musicnews|registration|rewiews|news|contacts)$ /pages/$1.php$2 [L]
 
 
 
