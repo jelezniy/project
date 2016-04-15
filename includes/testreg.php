@@ -1,7 +1,7 @@
 <?php
 session_start();
-ini_set('display_errors',1);
-error_reporting(E_ALL);
+//ini_set('display_errors',1);
+//error_reporting(E_ALL);
 if (isset($_POST['login'])) { $login = $_POST['login']; if ($login == '') { unset($login);} } 
 if (isset($_POST['password'])) { $password=$_POST['password']; if ($password =='') { unset($password);} }
    

@@ -14,7 +14,7 @@
         
         <div id="content">
             <h2>Новости</h2>
-            <?php include ('../includes/news.php')?>
+            <?php include ('../includes/db_news.php')?>
         </div>
         
         <div id="sidebar">
@@ -36,16 +36,7 @@
     <div id="tooplate_main_bottom"></div>
     
     <div id="tooplate_bottom">
-     	<div class="col_allw270">
-        	<h4>Pages</h4>
-            <ul class="bottom_list">
-            	<li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-			</ul>
-        </div>
+     	<?php include ('../blocks/bottom_list.php');?>
   		<div class="col_allw270">
 			<h4>Blog Posts</h4>
 			<ul class="bottom_list">
