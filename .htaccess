@@ -15,7 +15,3 @@ RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1 [R=301,L]
 #RewriteRule ^index\.php$ http://www.stud9.asdat.info/ [R=301,L]
 
 RewriteRule ^(albums|enter|kinonews|musicnews|registration|radio|news|contacts)$ /pages/$1.php$2 [L]
-
-
-
-
