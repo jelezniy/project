@@ -320,37 +320,28 @@
         </section>
        </aside>
       
+      
+      
     <!-- Content Wrapper. Contains page content -->
-          <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
-            <section class="content-header">
-              <h1>
-                Dashboard
-                <small>Control panel</small>
-              </h1>
-              <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">
-            <?php                   
-            include 'inc/case.php';
-            echo $case;
-            var_dump($case); ?>
-            </li>
-          </ol>
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+            Панель управления
+          </h1>
+          
         </section>
 
         <!-- Main content -->
         <section class="content">
-            <?php echo $case; ?>
-</div>  
-        </div>
-      </aside><!-- /.control-sidebar -->
-      <!-- Add the sidebars background. This div must be placed
+          <?php include 'inc/case.php'; ?>
+        </section>
+      </div>  
+    </div>
+            <!-- Add the sidebars background. This div must be placed
            immediately after the control sidebar -->
       <div class="control-sidebar-bg"></div>
-    </div><!-- ./wrapper -->
-
-    <!-- jQuery 2.1.4 -->
+        <!-- jQuery 2.1.4 -->
     <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
