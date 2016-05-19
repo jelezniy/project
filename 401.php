@@ -1,12 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>JelezniyMusic</title>
+<title>Ошибка авторизации 401</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
+<!--
+Template 2025 Orange
+http://www.tooplate.com/view/2025-orange
+-->
+<link href="css/tooplate_style.css" rel="stylesheet" type="text/css" />
 
-<link href="../css/tooplate_style.css" rel="stylesheet" type="text/css" />
-
-<script type="text/javascript" src="../js/swfobject.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
 <script type="text/javascript">
 	var flashvars = {};
 	flashvars.xml_file = "photo_list.xml";
@@ -17,10 +22,10 @@
 	swfobject.embedSWF("flash_slider.swf", "flash_grid_slider", "440", "220", "9.0.0", false, flashvars, params, attributes);
 </script>
 
-<link rel="stylesheet" type="text/css" href="../css/ddsmoothmenu.css" />
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 
-<script type="text/javascript" src="../js/jquery.min.js"></script>
-<script type="text/javascript" src="../js/ddsmoothmenu.js">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js">
 
 /***********************************************
 * Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
@@ -43,3 +48,7 @@ ddsmoothmenu.init({
 </script>
     
 </head>
+<body>
+    <img src="images/error/401.jpg"
+</body>
+</html>

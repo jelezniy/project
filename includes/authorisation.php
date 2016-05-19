@@ -1,9 +1,4 @@
 <?php
-require_once "config.api";
-//ini_set('display_errors',1);
-//error_reporting(E_ALL);
-
-
 if (isset($_POST['Enter']))
     {
     $e_login = $_POST['e_login'];

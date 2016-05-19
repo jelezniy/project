@@ -14,6 +14,7 @@
  //удаляем лишние пробелы
     $login = trim($login);
     $password = trim($password);
+    $password = md5($password);
  // подключаемся к базе
     include ("config.api");
  // проверка на существование пользователя с таким же логином

@@ -16,37 +16,26 @@
     
     
     <div id="tooplate_middle">
-        
-        <form action="../includes/testreg.php" method="post">
-        <p>
-            <label>Ваш логин:<br></label>
-            <input name="login" type="text" size="15" maxlength="15">
-        </p>
-
-        <p>
-            <label>Ваш пароль:<br></label>
-            <input name="password" type="password" size="15" maxlength="15">
-        </p>
-
-        <p>
-            <input type="submit" name="submit" value="Войти"
-        </p>
- </form>
-        <br>
-                <?php
-                // Проверяем, пусты ли переменные логина и id пользователя
-                if (empty($_SESSION['login']) or empty($_SESSION['id']))
-                {
-                    // Если пусты, то мы не выводим ссылку
-                    echo "Вы вошли на сайт, как гость<br><a href='#'>Эта ссылка  доступна только зарегистрированным пользователям</a>";
-                }
-                else
-                {
-                    // Если не пусты, то мы выводим ссылку
-                    echo "Вы вошли на сайт, как ".$_SESSION['login']."<br><a  href='http://orteil.dashnet.org/cookieclicker/'>Эта ссылка доступна только  зарегистрированным пользователям</a>";
-                }
-                ?>
-        <div id="registr"><a href="pages/registration.php"></a></div>
+        <div align="center" style="width:180px;">
+	<div id="RP_v3_style"></div>
+	<div id="RP_v3_player-wrapper"><a href="http://radiopotok.ru/">Онлайн радио</a></div>
+	<div id="RP_v3_content" style="max-height:237px; overflow:auto;"></div>
+	<link rel="stylesheet" href="http://yandex.st/jquery-ui/1.8.21/themes/base/jquery.ui.all.min.css" />
+	<script type="text/javascript"><!--
+		var RP_v3_font_size           = '14px';    // Размер шрифта
+		var RP_v3_bg_color            = 'black';   // Цвет фона
+		var RP_v3_border_color        = '#F1CA13';    // Цвет рамки
+		var RP_v3_border_hover_color  = '#f00';    // Цвет рамки при наведении
+		var RP_v3_a_color             = 'white';    // Цвет ссылки
+		var RP_v3_a_color_act         = '#16F113';    // Цвет активной ссылки
+		var RP_v3_a_color_hover       = 'red';     // Цвет ссылки при наведении
+		var RP_v3_new_window          = false;     // Слушать радио в новом окне [true/false]
+	//--></script>
+	<script type="text/javascript" src="http://yandex.st/jquery/1.4.4/jquery.min.js"></script>
+	<script type="text/javascript" src="http://yandex.st/swfobject/2.2/swfobject.min.js"></script>
+	<script type="text/javascript" src="http://yandex.st/jquery-ui/1.8.22/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="http://radiopotok.ru/f/script3/1a1bf11671b17684a547f28fa10fe59b.js" charset="UTF-8"></script>
+</div>
         <div class="cleaner"></div>
     </div> <!-- end of tooplate_middle -->
     
@@ -82,10 +71,3 @@
 
 </body>
 </html><?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
